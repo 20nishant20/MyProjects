@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+	<link rel="stylesheet" href="./css/mystyles.css">
+	<link rel="shortcut icon" href="./tittleimg.png">
+</head>
+<body>  
+	<div class="container">
+	<div class="row">
+			<input type="text" id="screen" name="screen" value="0" placeholder="0" disabled>
+	</div>
+
+	<div class="row">
+		<div class="col"><button onclick="deleted(del)" type="button" value="del"  id="del">AC</button></div>
+		<div class="col"><button id="dot" value="." onclick="dots('.')">.</button></div>
+		<div class="col"><button onclick="myfunction('/')" type="button" value="/" id="divide">/</button></div>
+		<div class="col"><button type="button" id="percent" value="%" onclick="myfunction('%')">%</button></div>
+	</div>
+	
+	<div class="row">
+			<div class="col"> <button onclick="myfunction(7)" type="button" value="7" id="seven">7</button></div>
+			<div class="col"><button onclick="myfunction(8)" type="button" value="8" id="eight">8</button></div>
+			<div class="col"> <button onclick="myfunction(9)" type="button" value="9" id="nine">9</button></div>
+			<div class="col"><button onclick="myfunction('*')" type="button" value="*" id="multiply">x</button></div>
+	</div>
+	<div class="row">
+			<div class="col"><button onclick="myfunction(4)" type="button" value="4" id="four">4</button></div>
+			<div class="col"><button onclick="myfunction(5)" type="button" value="5" id="five">5</button></div>
+			<div class="col"><button onclick="myfunction(6)" type="button" value="6" id="six">6</button></div>
+			<div class="col"> <button onclick="myfunction('-')" type="button" value="-" id="minus">-</button></div>
+
+	</div>
+	<div class="row">
+			<div class="col"><button onclick="myfunction(1)" type="button" value="1" id="one">1</button></div>
+			<div class="col"><button onclick="myfunction(2)" type="button" value="2" id="two">2</button></div>
+			<div class="col"><button onclick="myfunction(3)" type="button" value="3" id="three">3</button></div>
+			<div class="col"><button onclick="myfunction('+')" type="button" value="+" id="add">+</button></div>
+	</div>
+
+		<div class="row">
+			<div class="col"> <button onclick="myfunction(0)" type="button" value="0" id="zero">0</button></div>
+			<div class="col"><button onclick="myfunction('=')" type="button" value="=" id="equal">=</button></div>
+		</div>
+
+	</div>
+    <script src="./js/myjs.js"></script>
+</body>
+</html>
